@@ -1,0 +1,30 @@
+{
+  "name": "soot.css",
+  "description": "A classless CSS library for drop-in brutalist design",
+  "version": "1.0.0",
+  "main": "soot.css",
+  "files": [
+    "*.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kauz-gmbh/soot.css.git"
+  },
+  "keywords": [
+    "css",
+    "classless",
+    "brutalist"
+  ],
+  "author": "Dominik Muhs <dmuhs@kauz.gmbh>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kauz-gmbh/soot.css/issues"
+  },
+  "homepage": "https://github.com/kauz-gmbh/soot.css#readme",
+  "devDependencies": {
+    "csso-cli": "^4.0.2"
+  },
+  "scripts": {
+    "prepublishOnly": "csso soot.css -o soot.min.css"
+  }
+}
