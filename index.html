@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brutalist Systems CSS - Documentation & Examples</title>
     <link rel="stylesheet" href="soot.css" />
+    <style>
+      .badge {
+        display: inline;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>soot.css</h1>
-      <p>A CSS library. No classes, no JS, no build system, no bullshit.</p>
+      <p>A classless CSS stylesheet.</p>
       <nav>
         <ul>
           <li><a href="#usage">Usage</a></li>
@@ -26,6 +31,32 @@
     </header>
 
     <main>
+      <section id="what">
+        <h2>Introduction</h2>
+        <p>
+          soot.css is a classless CSS stylesheet. It's goal is to be
+          lightweight, opinionated, and flexible. It's meant to be a drop-in
+          stylesheet for small and medium-sized websites. It was inspired by
+          <a href="https://concrete.style/">concrete.css</a>,
+          <a href="https://newcss.net/">new.css</a> and countless brutalist
+          websites on the internet.
+        </p>
+        <p>I hope that this little library brings you joy!</p>
+        <p>
+          <a href=""
+            ><img
+              class="badge"
+              alt="Version badge"
+              src="https://img.shields.io/npm/v/soot.css.svg?color=fff&amp;labelColor=fff&amp;style=flat-square"
+          /></a>
+          <a href="https://bundlephobia.com/package/soot.css@1.0.0">
+            <img
+              class="badge"
+              alt="Size badge"
+              src="https://img.shields.io/bundlephobia/minzip/soot.css.svg?color=fff&amp;labelColor=fff&amp;style=flat-square"
+          /></a>
+        </p>
+      </section>
       <section id="usage">
         <h2>Usage</h2>
         <p>Link the latest stable version with Unpkg:</p>
@@ -36,13 +67,6 @@
 
         <p>Install the npm package:</p>
         <pre><code>npm i soot.css</code></pre>
-
-        <a href="https://bundlephobia.com/package/soot.css@1.0.0">
-          <img
-            class="badge"
-            alt="Size badge"
-            src="https://img.shields.io/bundlephobia/minzip/soot.css.svg?color=fff&amp;labelColor=fff&amp;style=flat-square"
-        /></a>
       </section>
 
       <section id="configuration">
