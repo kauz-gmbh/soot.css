@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brutalist Systems CSS - Documentation & Examples</title>
     <link rel="stylesheet" href="soot.css" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/soot.css@1.0.0/soot.min.css"> -->
   </head>
   <body>
     <header>
-      <h1>Brutalist Systems</h1>
-      <p>Classless CSS. Write HTML, get styling. No classes, no build step.</p>
+      <h1>soot.css</h1>
+      <p>A CSS library. No classes, no JS, no build system, no bullshit.</p>
       <nav>
         <ul>
           <li><a href="#usage">Usage</a></li>
@@ -29,11 +28,21 @@
     <main>
       <section id="usage">
         <h2>Usage</h2>
-        <p>Link the stylesheet. Write HTML. Done.</p>
+        <p>Link the latest stable version with Unpkg:</p>
+        <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/soot.css@1.0.0/soot.min.css"&gt;</code></pre>
 
-        <pre><code>&lt;link rel="stylesheet" href="bs.css"&gt;</code></pre>
+        <p>Link the latest development version with jsDelivr:</p>
+        <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kauz-gmbh/soot.css@main/soot.min.css"&gt;</code></pre>
 
-        <p>Override CSS variables to customize.</p>
+        <p>Install the npm package:</p>
+        <pre><code>npm i soot.css</code></pre>
+
+        <a href="https://bundlephobia.com/package/soot.css@1.0.0">
+          <img
+            class="badge"
+            alt="Size badge"
+            src="https://img.shields.io/bundlephobia/minzip/soot.css.svg?color=fff&amp;labelColor=fff&amp;style=flat-square"
+        /></a>
       </section>
 
       <section id="configuration">
@@ -164,7 +173,9 @@
         <ul>
           <li><code>section</code> + <code>section</code> get dividers</li>
           <li><code>article</code> stacks get lighter dividers</li>
-          <li>Content respects <code>--max-content-width</code> unless full-bleed</li>
+          <li>
+            Content respects <code>--max-content-width</code> unless full-bleed
+          </li>
           <li>Print: light background, visible URLs, smart page breaks</li>
         </ul>
       </section>
@@ -196,9 +207,15 @@
         <article>
           <h3>Text Elements</h3>
 
-          <p>Paragraph with <a href="#">link</a>. <strong>Bold text</strong> and <em>italic text</em>. <mark>Highlighted text</mark>. <small>Small text</small>.</p>
+          <p>
+            Paragraph with <a href="#">link</a>. <strong>Bold text</strong> and
+            <em>italic text</em>. <mark>Highlighted text</mark>.
+            <small>Small text</small>.
+          </p>
 
-          <p><code>inline code</code> and <kbd>Ctrl+C</kbd> keyboard shortcuts.</p>
+          <p>
+            <code>inline code</code> and <kbd>Ctrl+C</kbd> keyboard shortcuts.
+          </p>
 
           <pre><code>// Code block
 function example() {
@@ -263,7 +280,10 @@ function example() {
 
           <figure>
             <video controls width="100%">
-              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+              <source
+                src="https://www.w3schools.com/html/mov_bbb.mp4"
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
             <figcaption>Video with native controls</figcaption>
@@ -274,12 +294,40 @@ function example() {
           <h3>SVG</h3>
 
           <figure>
-            <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-              <rect x="10" y="10" width="80" height="80" fill="none" stroke="currentColor" stroke-width="2" />
-              <rect x="110" y="10" width="80" height="80" fill="none" stroke="currentColor" stroke-width="2" />
+            <svg
+              width="200"
+              height="100"
+              viewBox="0 0 200 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="10"
+                y="10"
+                width="80"
+                height="80"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <rect
+                x="110"
+                y="10"
+                width="80"
+                height="80"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
               <circle cx="50" cy="50" r="15" fill="currentColor" />
               <circle cx="150" cy="50" r="15" fill="currentColor" />
-              <line x1="90" y1="50" x2="110" y2="50" stroke="currentColor" stroke-width="2" />
+              <line
+                x1="90"
+                y1="50"
+                x2="110"
+                y2="50"
+                stroke="currentColor"
+                stroke-width="2"
+              />
             </svg>
             <figcaption>SVG inherits text color</figcaption>
           </figure>
@@ -289,7 +337,15 @@ function example() {
           <h3>Embedded</h3>
 
           <figure>
-            <iframe width="800" height="600" src="https://example.com/" title="Embedded content frame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe
+              width="800"
+              height="600"
+              src="https://example.com/"
+              title="Embedded content frame"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
             <figcaption>Responsive iframe</figcaption>
           </figure>
         </article>
@@ -322,7 +378,9 @@ function example() {
             </tr>
             <tr>
               <td>Forms</td>
-              <td><code>input</code>, <code>select</code>, <code>textarea</code></td>
+              <td>
+                <code>input</code>, <code>select</code>, <code>textarea</code>
+              </td>
               <td>Squared controls</td>
             </tr>
             <tr>
@@ -383,10 +441,20 @@ function example() {
             <legend>Project Request</legend>
 
             <label for="project-name">Project Name</label>
-            <input id="project-name" type="text" placeholder="New brutalist site" required />
+            <input
+              id="project-name"
+              type="text"
+              placeholder="New brutalist site"
+              required
+            />
 
             <label for="contact-email">Contact Email</label>
-            <input id="contact-email" type="email" placeholder="dev@example.com" required />
+            <input
+              id="contact-email"
+              type="email"
+              placeholder="dev@example.com"
+              required
+            />
 
             <label for="timeline">Timeline</label>
             <select id="timeline" required>
@@ -398,9 +466,17 @@ function example() {
 
             <fieldset>
               <legend>Budget Range</legend>
-              <label><input type="radio" name="budget" value="small" checked /> Under $5k</label>
-              <label><input type="radio" name="budget" value="medium" /> $5k–$15k</label>
-              <label><input type="radio" name="budget" value="large" /> $15k+</label>
+              <label
+                ><input type="radio" name="budget" value="small" checked />
+                Under $5k</label
+              >
+              <label
+                ><input type="radio" name="budget" value="medium" />
+                $5k–$15k</label
+              >
+              <label
+                ><input type="radio" name="budget" value="large" /> $15k+</label
+              >
             </fieldset>
 
             <fieldset>
@@ -411,7 +487,11 @@ function example() {
             </fieldset>
 
             <label for="project-brief">Project Brief</label>
-            <textarea id="project-brief" rows="4" placeholder="Describe scope, goals, and any constraints."></textarea>
+            <textarea
+              id="project-brief"
+              rows="4"
+              placeholder="Describe scope, goals, and any constraints."
+            ></textarea>
 
             <button type="submit">Submit Brief</button>
             <button type="reset">Reset</button>
