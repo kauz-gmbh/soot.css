@@ -1,21 +1,19 @@
 # soot.css
 
-A classless CSS library for drop-in brutalist design. Dark, bold, and minimalistic.
+soot.css is a classless CSS stylesheet. Its goal is to be lightweight, opinionated, and flexible. It's meant to be a drop-in stylesheet for small and medium-sized websites.
 
-## Installation
+For a quickstart and examples, check out the docs: [soot.brutalist.systems](https://soot.brutalist.systems)
 
-### npm
+## Publish
 
-```bash
-npm i soot.css
+Install `csso` dev dependency:
+
+```sh
+npm i
 ```
 
-### CDN
+Publish
 
-```html
-<link rel="stylesheet" href="https://unpkg.com/soot.css">
+```sh
+npm publish --access public
 ```
-
-## Documentation
-
-[soot.brutalist.systems](https://soot.brutalist.systems)
