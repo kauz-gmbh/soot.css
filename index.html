@@ -20,11 +20,12 @@
           <li><a href="#introduction">Introduction</a></li>
           <li><a href="#usage">Usage</a></li>
           <li><a href="#configuration">Configuration</a></li>
-          <li><a href="#typography">Typography</a></li>
-          <li><a href="#media">Media</a></li>
-          <li><a href="#tables">Tables</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#figures">Figures</a></li>
+          <li><a href="#lists">Lists</a></li>
           <li><a href="#forms">Forms</a></li>
-          <li><a href="#components">Components</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#quotes">Quotes</a></li>
         </ul>
       </nav>
     </header>
@@ -171,132 +172,183 @@
         <pre><code>&lt;body data-full-bleed&gt;</code></pre>
       </section>
 
-    <section>
-      <h2>Buttons</h2>
-      <p>
-        <button>DESTROY</button>
-        <button disabled>OUT OF ORDER</button>
-      </p>
-    </section>
+      <section id="images">
+        <h2>Images</h2>
+        <p>
+          Brutalist buildings often have a fortress-like appearance, with heavy,
+          blocky forms.
+        </p>
+        <img
+          alt="Brutalist building from an inner yard"
+          src="https://picsum.photos/id/315/640/480?grayscale"
+        />
+      </section>
 
-    <section>
-      <h2>Images</h2>
-      <p>Raw concrete. Unfiltered truth. No decoration needed.</p>
-      <img alt="Brutalist concrete texture" src="https://picsum.photos/640/480?grayscale">
-    </section>
+      <section id="figures">
+        <h2>Figures</h2>
+        <figure>
+          <img
+            alt="Brutalist spiral structure staircase"
+            src="https://picsum.photos/id/679/640/480?grayscale"
+          />
+          <figcaption>
+            Brutalism emphasizes functionality and simplicity over decorative
+            elements.
+          </figcaption>
+        </figure>
+      </section>
 
-    <section>
-      <h2>Figures</h2>
-      <p>Brutalist architecture peaked between 1950-1980. Over 3,000 structures remain worldwide.</p>
-      <figure>
-        <img alt="Brutalist structure" src="https://picsum.photos/640/480?grayscale">
-        <figcaption>The Barbican Estate, London. 2,014 flats across 40 acres of exposed concrete. Completed 1982.</figcaption>
-      </figure>
-    </section>
-
-    <section>
-      <h2>Lists</h2>
-      <p>Structure without ornament. Function over form.</p>
-      <ul>
-        <li>No rounded corners</li>
-        <li>No gradients or shadows</li>
-        <li>No animations or transitions</li>
-      </ul>
-      <ol>
-        <li>Pour concrete</li>
-        <li>Remove formwork</li>
-        <li>Leave exposed</li>
-      </ol>
-      <dl>
-        <dt>Béton brut</dt>
-        <dd>French: "raw concrete" — the origin of the term brutalism</dd>
-        <dt>Load-bearing</dt>
-        <dd>Walls that support structural weight, not just decoration</dd>
-      </dl>
-    </section>
-
-    <section>
-      <h2>Navigation</h2>
-      <p>Direct paths only. No carousel of confusion.</p>
-      <nav>
+      <section id="lists">
+        <h2>Lists</h2>
+        <p>Unordered lists for unordered thoughts.</p>
         <ul>
-          <li>SYSTEM</li>
-          <li><a href="#manifest">Manifest</a></li>
-          <li><a href="#structure">Structure</a></li>
-          <li><a href="#source">Source</a></li>
+          <li>
+            Create honest, unpretentious buildings that reveal their structure
+            and materials.
+          </li>
+          <li>
+            Incorporates social and political ideals, emphasizing equality and
+            accessibility.
+          </li>
+          <li>
+            Withstand the test of time, with durable materials and robust
+            construction.
+          </li>
         </ul>
-      </nav>
-    </section>
+        <p>Ordered lists for straight priorities.</p>
+        <ol>
+          <li>
+            Brutalist buildings are often celebrated for their bold,
+            uncompromising designs.
+          </li>
+          <li>
+            The style has experienced a resurgence in recent years, with renewed
+            interest from architects and designers.
+          </li>
+          <li>
+            Brutalism has influenced other architectural styles, such as
+            high-tech and postmodernism.
+          </li>
+        </ol>
+        <p>Definition lists for short explanations.</p>
+        <dl>
+          <dt>Béton brut</dt>
+          <dd>French: "raw concrete"; the origin of the term brutalism</dd>
+          <dt>Le Corbusier</dt>
+          <dd>
+            A Swiss-French architect; considered one of the pioneers of
+            Brutalism
+          </dd>
+          <dt>Barbican Centre</dt>
+          <dd>
+            Cultural venue in London, and prime example of brutalist
+            architecture
+          </dd>
+        </dl>
+      </section>
 
-    <section>
-      <h2>Forms</h2>
-      <form>
-        <fieldset>
-          <legend>System Registration</legend>
-          <label for="username">Username</label>
-          <input type="text" name="username" id="username" placeholder="root">
-          <label for="terminal">Preferred Terminal</label>
-          <select name="terminal" id="terminal">
-            <option value="alacritty">Alacritty</option>
-            <option value="kitty">Kitty</option>
-            <option value="wezterm">WezTerm</option>
-            <option value="urxvt">URxvt</option>
-          </select>
-          <label for="manifesto">Your Manifesto</label>
-          <textarea name="manifesto" id="manifesto" placeholder="Form follows function. Honesty in materials. No decoration."></textarea>
-          <input type="submit" value="SUBMIT">
-        </fieldset>
-      </form>
-    </section>
+      <section id="forms">
+        <h2>Forms</h2>
+        <form>
+          <fieldset>
+            <legend>Building Survey</legend>
+            <label for="building-name">Building Name</label>
+            <input
+              type="text"
+              name="building-name"
+              id="building-name"
+              placeholder="Barbican Estate"
+            />
+            <label for="material">Primary Material</label>
+            <select name="material" id="material">
+              <option value="concrete">Exposed Concrete</option>
+              <option value="brick">Raw Brick</option>
+              <option value="steel">Structural Steel</option>
+              <option value="hybrid">Hybrid Materials</option>
+            </select>
+            <label for="assessment">Architectural Assessment</label>
+            <textarea
+              name="assessment"
+              id="assessment"
+              placeholder="The structure reveals its bones. Materials speak their truth. Function dictates form."
+            ></textarea>
+            <input type="submit" value="SUBMIT" />
+            <button disabled>DEMOLISHED</button>
+          </fieldset>
+        </form>
+      </section>
 
-    <section>
-      <h2>Tables</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Building</th>
-            <th>Year</th>
-            <th>Concrete (m³)</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Habitat 67</td>
-            <td>1967</td>
-            <td>15,000</td>
-            <td>Standing</td>
-          </tr>
-          <tr>
-            <td>Trellick Tower</td>
-            <td>1972</td>
-            <td>32,000</td>
-            <td>Grade II Listed</td>
-          </tr>
-          <tr>
-            <td>Boston City Hall</td>
-            <td>1968</td>
-            <td>21,000</td>
-            <td>Controversial</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <section id="tables">
+        <h2>Tables</h2>
+        <table>
+          <caption>
+            Famous brutalist architecture
+          </caption>
+          <thead>
+            <tr>
+              <th>Building</th>
+              <th>Year</th>
+              <th>Location</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Neguri Gane</td>
+              <td>2002</td>
+              <td>Benidorm, Alicante, Valencia, Spain</td>
+              <td>In use</td>
+            </tr>
+            <tr>
+              <td>Akbar Hotel</td>
+              <td>1969</td>
+              <td>New Delhi, Delhi, India</td>
+              <td>In use</td>
+            </tr>
+            <tr>
+              <td>AT&T Long Lines Building</td>
+              <td>1981</td>
+              <td>Manhattan, New York, New York, USA</td>
+              <td>In use</td>
+            </tr>
+            <tr>
+              <td>Banco Central do Brasil</td>
+              <td>1974</td>
+              <td>Brasilia, Distrito Federal, Brazil</td>
+              <td>In use</td>
+            </tr>
+            <tr>
+              <td>Lister Tor</td>
+              <td>1975</td>
+              <td>Hanover, Lower Saxony, Germany</td>
+              <td>In use</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <section>
-      <h2>Blockquotes</h2>
-      <blockquote>
-        "What is the point of a house? To shelter us. Everything else is decoration."
-      </blockquote>
-      <blockquote>
-        "The materials are used without disguise or shame. Concrete is concrete, steel is steel, glass is glass." — <em>Reyner Banham, 1966</em>
-      </blockquote>
-    </section>
-
+      <section id="quotes">
+        <h2>Quotes</h2>
+        <blockquote>
+          "It is our intention to have the structure exposed entirely, without
+          interior finishes, wherever practicable."<br /><em
+            >Alison Smithson, 1953</em
+          >.
+        </blockquote>
+        <p>Another good one:</p>
+        <blockquote>
+          "Brutalist architecture was Modernism's angry underside, and was
+          never, much as some would rather it were, a mere aesthetic style. It
+          was a political aesthetic, an attitude, a weapon, dedicated to the
+          precept that nothing was too good for ordinary people."<br /><em
+            >Owen Hatherley, 2010</em
+          >
+        </blockquote>
+      </section>
     </main>
 
     <footer>
-      <p>Made with love!</p>
+      <p>Made with <span style="color: var(--color-accent)">♡</span> by <a href="https://soot.brutalist.systems/">Brutalist Systems</a></p>
     </footer>
   </body>
 </html>
