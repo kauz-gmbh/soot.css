@@ -1,360 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <title>soot.css</title>
-    <link rel="stylesheet" href="soot.css" />
-    <style>
-      .badge {
-        display: inline;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>soot.css</h1>
-      <p>A classless CSS stylesheet.</p>
-      <nav>
-        <ul>
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#usage">Usage</a></li>
-          <li><a href="#configuration">Configuration</a></li>
-          <li><a href="#images">Images</a></li>
-          <li><a href="#figures">Figures</a></li>
-          <li><a href="#lists">Lists</a></li>
-          <li><a href="#forms">Forms</a></li>
-          <li><a href="#tables">Tables</a></li>
-          <li><a href="#quotes">Quotes</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <section id="introduction">
-        <h2>Introduction</h2>
-        <p>
-          soot.css is a classless CSS stylesheet. Its goal is to be lightweight,
-          opinionated, and flexible. It's meant to be a drop-in stylesheet for
-          small and medium-sized websites. It was inspired by
-          <a href="https://concrete.style/">concrete.css</a>,
-          <a href="https://newcss.net/">new.css</a> and countless brutalist
-          websites on the internet. It's available on
-          <a href="https://github.com/kauz-gmbh/soot.css">GitHub</a> and
-          <a href="https://www.npmjs.com/package/soot.css">NPM</a>.
-        </p>
-        <p>I hope that this little library brings you joy!</p>
-        <p>
-          <a href="https://www.npmjs.com/package/soot.css"
-            ><img
-              class="badge"
-              alt="Version badge"
-              src="https://img.shields.io/npm/v/soot.css?style=flat-square&logoColor=fff&labelColor=fff&color=fff"
-          /></a>
-          <a href="https://bundlephobia.com/package/soot.css">
-            <img
-              class="badge"
-              alt="Size badge"
-              src="https://img.shields.io/bundlejs/size/soot.css?format=minzip&style=flat-square&labelColor=fff&color=fff"
-          /></a>
-        </p>
-      </section>
-      <section id="usage">
-        <h2>Usage</h2>
-        <p>Link the latest stable version with Unpkg:</p>
-        <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/soot.css@1.0.1/soot.min.css"&gt;</code></pre>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>soot.css</title>
+  <link rel="stylesheet" href="soot.css" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20144%20144%22%20width%3D%22144%22%20height%3D%22144%22%3E%0A%20%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%230A0A0A%22%2F%3E%0A%20%20%3Ctext%20x%3D%2250%25%22%20y%3D%2256%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22Helvetica%2C%20Arial%2C%20sans-serif%22%20font-size%3D%22132%22%20font-weight%3D%22bold%22%20fill%3D%22%23C85A3A%22%3ES%3C%2Ftext%3E%0A%3C%2Fsvg%3E">
+  <style>
+    .badge {
+      display: inline;
+    }
+  </style>
+</head>
 
-        <p>Link the latest development version with jsDelivr:</p>
-        <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kauz-gmbh/soot.css@main/soot.min.css"&gt;</code></pre>
+<body>
+  <header>
+    <h1>soot.css</h1>
+    <p>A classless CSS stylesheet.</p>
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#configuration">Configuration</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#figures">Figures</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <p>Install the npm package:</p>
-        <pre><code>npm i soot.css</code></pre>
-      </section>
+  <main>
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>
+        soot.css is a classless CSS stylesheet. Its goal is to be lightweight,
+        opinionated, and flexible. It's meant to be a drop-in stylesheet for
+        small and medium-sized websites. It was inspired by
+        <a href="https://concrete.style/">concrete.css</a>,
+        <a href="https://newcss.net/">new.css</a> and countless brutalist
+        websites on the internet. It's available on
+        <a href="https://github.com/kauz-gmbh/soot.css">GitHub</a> and
+        <a href="https://www.npmjs.com/package/soot.css">NPM</a>.
+      </p>
+      <p>I hope that this little library brings you joy!</p>
+      <p>
+        <a href="https://www.npmjs.com/package/soot.css"><img class="badge" alt="Version badge"
+            src="https://img.shields.io/npm/v/soot.css?style=flat-square&logoColor=fff&labelColor=fff&color=fff" /></a>
+        <a href="https://bundlephobia.com/package/soot.css">
+          <img class="badge" alt="Size badge"
+            src="https://img.shields.io/bundlejs/size/soot.css?format=minzip&style=flat-square&labelColor=fff&color=fff" /></a>
+      </p>
+    </section>
+    <section id="usage">
+      <h2>Usage</h2>
+      <p>Link the latest stable version with Unpkg:</p>
+      <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/soot.css@1.0.1/soot.min.css"&gt;</code></pre>
 
-      <section id="configuration">
-        <h2>Configuration</h2>
-        <p>
-          I try to keep things configurable with CSS variables. Here's an
-          overview of things you can easily tweak!
-        </p>
+      <p>Link the latest development version with jsDelivr:</p>
+      <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kauz-gmbh/soot.css@main/soot.min.css"&gt;</code></pre>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Variable</th>
-              <th>Default</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>--color-bg</code></td>
-              <td><code>#0A0A0A</code></td>
-              <td>Primary background</td>
-            </tr>
-            <tr>
-              <td><code>--color-fg</code></td>
-              <td><code>#ECECEC</code></td>
-              <td>Primary text color</td>
-            </tr>
-            <tr>
-              <td><code>--color-accent</code></td>
-              <td><code>#C85A3A</code></td>
-              <td>Links, focus states, highlights</td>
-            </tr>
-            <tr>
-              <td><code>--color-border</code></td>
-              <td><code>#ECECEC</code></td>
-              <td>Primary border color</td>
-            </tr>
-            <tr>
-              <td><code>--color-border-light</code></td>
-              <td><code>rgba(236, 236, 236, 0.1)</code></td>
-              <td>Light borders, subtle outlines</td>
-            </tr>
-            <tr>
-              <td><code>--color-muted</code></td>
-              <td><code>#7A7A7A</code></td>
-              <td>Muted text, captions</td>
-            </tr>
-            <tr>
-              <td><code>--color-surface</code></td>
-              <td><code>#1A1A1A</code></td>
-              <td>Elevated surfaces, code blocks</td>
-            </tr>
-            <tr>
-              <td><code>--spacing-unit</code></td>
-              <td><code>0.5rem</code></td>
-              <td>Base spacing increment</td>
-            </tr>
-            <tr>
-              <td><code>--max-content-width</code></td>
-              <td><code>960px</code></td>
-              <td>Maximum content width</td>
-            </tr>
-            <tr>
-              <td><code>--line-height-base</code></td>
-              <td><code>1.6</code></td>
-              <td>Base line height</td>
-            </tr>
-            <tr>
-              <td><code>--line-height-relaxed</code></td>
-              <td><code>1.7</code></td>
-              <td>Paragraph line height</td>
-            </tr>
-            <tr>
-              <td><code>--border-thin</code></td>
-              <td><code>1px solid var(--color-border-light)</code></td>
-              <td>Thin borders, inline elements</td>
-            </tr>
-            <tr>
-              <td><code>--border-normal</code></td>
-              <td><code>2px solid var(--color-border-light)</code></td>
-              <td>Standard borders, sections, forms</td>
-            </tr>
-            <tr>
-              <td><code>--border-heavy</code></td>
-              <td><code>4px solid var(--color-border)</code></td>
-              <td>Accent borders, blockquotes</td>
-            </tr>
-          </tbody>
-        </table>
+      <p>Install the npm package:</p>
+      <pre><code>npm i soot.css</code></pre>
+    </section>
 
-        <h3>Example</h3>
-        <pre><code>:root {
+    <section id="configuration">
+      <h2>Configuration</h2>
+      <p>
+        I try to keep things configurable with CSS variables. Here's an
+        overview of things you can easily tweak!
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Variable</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>--color-bg</code></td>
+            <td><code>#0A0A0A</code></td>
+            <td>Primary background</td>
+          </tr>
+          <tr>
+            <td><code>--color-fg</code></td>
+            <td><code>#ECECEC</code></td>
+            <td>Primary text color</td>
+          </tr>
+          <tr>
+            <td><code>--color-accent</code></td>
+            <td><code>#C85A3A</code></td>
+            <td>Links, focus states, highlights</td>
+          </tr>
+          <tr>
+            <td><code>--color-border</code></td>
+            <td><code>#ECECEC</code></td>
+            <td>Primary border color</td>
+          </tr>
+          <tr>
+            <td><code>--color-border-light</code></td>
+            <td><code>rgba(236, 236, 236, 0.1)</code></td>
+            <td>Light borders, subtle outlines</td>
+          </tr>
+          <tr>
+            <td><code>--color-muted</code></td>
+            <td><code>#7A7A7A</code></td>
+            <td>Muted text, captions</td>
+          </tr>
+          <tr>
+            <td><code>--color-surface</code></td>
+            <td><code>#1A1A1A</code></td>
+            <td>Elevated surfaces, code blocks</td>
+          </tr>
+          <tr>
+            <td><code>--spacing-unit</code></td>
+            <td><code>0.5rem</code></td>
+            <td>Base spacing increment</td>
+          </tr>
+          <tr>
+            <td><code>--max-content-width</code></td>
+            <td><code>960px</code></td>
+            <td>Maximum content width</td>
+          </tr>
+          <tr>
+            <td><code>--line-height-base</code></td>
+            <td><code>1.6</code></td>
+            <td>Base line height</td>
+          </tr>
+          <tr>
+            <td><code>--line-height-relaxed</code></td>
+            <td><code>1.7</code></td>
+            <td>Paragraph line height</td>
+          </tr>
+          <tr>
+            <td><code>--border-thin</code></td>
+            <td><code>1px solid var(--color-border-light)</code></td>
+            <td>Thin borders, inline elements</td>
+          </tr>
+          <tr>
+            <td><code>--border-normal</code></td>
+            <td><code>2px solid var(--color-border-light)</code></td>
+            <td>Standard borders, sections, forms</td>
+          </tr>
+          <tr>
+            <td><code>--border-heavy</code></td>
+            <td><code>4px solid var(--color-border)</code></td>
+            <td>Accent borders, blockquotes</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Example</h3>
+      <pre><code>:root {
   --color-accent: #ff0066;
   --spacing-unit: 0.375rem;
   --max-content-width: 1200px;
 }</code></pre>
 
-        <p>
-          If you don't like the centered layout with the max width, you can
-          toggle this switch to get a full-bleed layout.
-        </p>
-        <pre><code>&lt;body data-full-bleed&gt;</code></pre>
-      </section>
-
-      <section id="images">
-        <h2>Images</h2>
-        <p>
-          Brutalist buildings often have a fortress-like appearance, with heavy,
-          blocky forms.
-        </p>
-        <img
-          alt="Brutalist building from an inner yard"
-          src="https://picsum.photos/id/315/640/480?grayscale"
-        />
-      </section>
-
-      <section id="figures">
-        <h2>Figures</h2>
-        <figure>
-          <img
-            alt="Brutalist spiral structure staircase"
-            src="https://picsum.photos/id/679/640/480?grayscale"
-          />
-          <figcaption>
-            Brutalism emphasizes functionality and simplicity over decorative
-            elements.
-          </figcaption>
-        </figure>
-      </section>
-
-      <section id="lists">
-        <h2>Lists</h2>
-        <p>Unordered lists for unordered thoughts.</p>
-        <ul>
-          <li>
-            Create honest, unpretentious buildings that reveal their structure
-            and materials.
-          </li>
-          <li>
-            Incorporates social and political ideals, emphasizing equality and
-            accessibility.
-          </li>
-          <li>
-            Withstand the test of time, with durable materials and robust
-            construction.
-          </li>
-        </ul>
-        <p>Ordered lists for straight priorities.</p>
-        <ol>
-          <li>
-            Brutalist buildings are often celebrated for their bold,
-            uncompromising designs.
-          </li>
-          <li>
-            The style has experienced a resurgence in recent years, with renewed
-            interest from architects and designers.
-          </li>
-          <li>
-            Brutalism has influenced other architectural styles, such as
-            high-tech and postmodernism.
-          </li>
-        </ol>
-        <p>Definition lists for short explanations.</p>
-        <dl>
-          <dt>Béton brut</dt>
-          <dd>French: "raw concrete"; the origin of the term brutalism</dd>
-          <dt>Le Corbusier</dt>
-          <dd>
-            A Swiss-French architect; considered one of the pioneers of
-            Brutalism
-          </dd>
-          <dt>Barbican Centre</dt>
-          <dd>
-            Cultural venue in London, and prime example of brutalist
-            architecture
-          </dd>
-        </dl>
-      </section>
-
-      <section id="forms">
-        <h2>Forms</h2>
-        <form>
-          <fieldset>
-            <legend>Building Survey</legend>
-            <label for="building-name">Building Name</label>
-            <input
-              type="text"
-              name="building-name"
-              id="building-name"
-              placeholder="Barbican Estate"
-            />
-            <label for="material">Primary Material</label>
-            <select name="material" id="material">
-              <option value="concrete">Exposed Concrete</option>
-              <option value="brick">Raw Brick</option>
-              <option value="steel">Structural Steel</option>
-              <option value="hybrid">Hybrid Materials</option>
-            </select>
-            <label for="assessment">Architectural Assessment</label>
-            <textarea
-              name="assessment"
-              id="assessment"
-              placeholder="The structure reveals its bones. Materials speak their truth. Function dictates form."
-            ></textarea>
-            <input type="submit" value="SUBMIT" />
-            <button disabled>DEMOLISHED</button>
-          </fieldset>
-        </form>
-      </section>
-
-      <section id="tables">
-        <h2>Tables</h2>
-        <table>
-          <caption>
-            Famous brutalist architecture
-          </caption>
-          <thead>
-            <tr>
-              <th>Building</th>
-              <th>Year</th>
-              <th>Location</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Neguri Gane</td>
-              <td>2002</td>
-              <td>Benidorm, Alicante, Valencia, Spain</td>
-              <td>In use</td>
-            </tr>
-            <tr>
-              <td>Akbar Hotel</td>
-              <td>1969</td>
-              <td>New Delhi, Delhi, India</td>
-              <td>In use</td>
-            </tr>
-            <tr>
-              <td>AT&T Long Lines Building</td>
-              <td>1981</td>
-              <td>Manhattan, New York, New York, USA</td>
-              <td>In use</td>
-            </tr>
-            <tr>
-              <td>Banco Central do Brasil</td>
-              <td>1974</td>
-              <td>Brasilia, Distrito Federal, Brazil</td>
-              <td>In use</td>
-            </tr>
-            <tr>
-              <td>Lister Tor</td>
-              <td>1975</td>
-              <td>Hanover, Lower Saxony, Germany</td>
-              <td>In use</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section id="quotes">
-        <h2>Quotes</h2>
-        <blockquote>
-          "It is our intention to have the structure exposed entirely, without
-          interior finishes, wherever practicable."<br /><em
-            >Alison Smithson, 1953</em
-          >.
-        </blockquote>
-        <p>Another good one:</p>
-        <blockquote>
-          "Brutalist architecture was Modernism's angry underside, and was
-          never, much as some would rather it were, a mere aesthetic style. It
-          was a political aesthetic, an attitude, a weapon, dedicated to the
-          precept that nothing was too good for ordinary people."<br /><em
-            >Owen Hatherley, 2010</em
-          >
-        </blockquote>
-      </section>
-    </main>
-
-    <footer>
       <p>
-        Made with <span style="color: var(--color-accent)">♡</span> by Dominik
-        Muhs over at <a href="https://brutalist.systems/">Brutalist Systems</a>.
+        If you don't like the centered layout with the max width, you can
+        toggle this switch to get a full-bleed layout.
       </p>
-    </footer>
-  </body>
+      <pre><code>&lt;body data-full-bleed&gt;</code></pre>
+    </section>
+
+    <section id="images">
+      <h2>Images</h2>
+      <p>
+        Brutalist buildings often have a fortress-like appearance, with heavy,
+        blocky forms.
+      </p>
+      <img alt="Brutalist building from an inner yard" src="https://picsum.photos/id/315/640/480?grayscale" />
+    </section>
+
+    <section id="figures">
+      <h2>Figures</h2>
+      <figure>
+        <img alt="Brutalist spiral structure staircase" src="https://picsum.photos/id/679/640/480?grayscale" />
+        <figcaption>
+          Brutalism emphasizes functionality and simplicity over decorative
+          elements.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <p>Unordered lists for unordered thoughts.</p>
+      <ul>
+        <li>
+          Create honest, unpretentious buildings that reveal their structure
+          and materials.
+        </li>
+        <li>
+          Incorporates social and political ideals, emphasizing equality and
+          accessibility.
+        </li>
+        <li>
+          Withstand the test of time, with durable materials and robust
+          construction.
+        </li>
+      </ul>
+      <p>Ordered lists for straight priorities.</p>
+      <ol>
+        <li>
+          Brutalist buildings are often celebrated for their bold,
+          uncompromising designs.
+        </li>
+        <li>
+          The style has experienced a resurgence in recent years, with renewed
+          interest from architects and designers.
+        </li>
+        <li>
+          Brutalism has influenced other architectural styles, such as
+          high-tech and postmodernism.
+        </li>
+      </ol>
+      <p>Definition lists for short explanations.</p>
+      <dl>
+        <dt>Béton brut</dt>
+        <dd>French: "raw concrete"; the origin of the term brutalism</dd>
+        <dt>Le Corbusier</dt>
+        <dd>
+          A Swiss-French architect; considered one of the pioneers of
+          Brutalism
+        </dd>
+        <dt>Barbican Centre</dt>
+        <dd>
+          Cultural venue in London, and prime example of brutalist
+          architecture
+        </dd>
+      </dl>
+    </section>
+
+    <section id="forms">
+      <h2>Forms</h2>
+      <form>
+        <fieldset>
+          <legend>Building Survey</legend>
+          <label for="building-name">Building Name</label>
+          <input type="text" name="building-name" id="building-name" placeholder="Barbican Estate" />
+          <label for="material">Primary Material</label>
+          <select name="material" id="material">
+            <option value="concrete">Exposed Concrete</option>
+            <option value="brick">Raw Brick</option>
+            <option value="steel">Structural Steel</option>
+            <option value="hybrid">Hybrid Materials</option>
+          </select>
+          <label for="assessment">Architectural Assessment</label>
+          <textarea name="assessment" id="assessment"
+            placeholder="The structure reveals its bones. Materials speak their truth. Function dictates form."></textarea>
+          <input type="submit" value="SUBMIT" />
+          <button disabled>DEMOLISHED</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="tables">
+      <h2>Tables</h2>
+      <table>
+        <caption>
+          Famous brutalist architecture
+        </caption>
+        <thead>
+          <tr>
+            <th>Building</th>
+            <th>Year</th>
+            <th>Location</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Neguri Gane</td>
+            <td>2002</td>
+            <td>Benidorm, Alicante, Valencia, Spain</td>
+            <td>In use</td>
+          </tr>
+          <tr>
+            <td>Akbar Hotel</td>
+            <td>1969</td>
+            <td>New Delhi, Delhi, India</td>
+            <td>In use</td>
+          </tr>
+          <tr>
+            <td>AT&T Long Lines Building</td>
+            <td>1981</td>
+            <td>Manhattan, New York, New York, USA</td>
+            <td>In use</td>
+          </tr>
+          <tr>
+            <td>Banco Central do Brasil</td>
+            <td>1974</td>
+            <td>Brasilia, Distrito Federal, Brazil</td>
+            <td>In use</td>
+          </tr>
+          <tr>
+            <td>Lister Tor</td>
+            <td>1975</td>
+            <td>Hanover, Lower Saxony, Germany</td>
+            <td>In use</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="quotes">
+      <h2>Quotes</h2>
+      <blockquote>
+        "It is our intention to have the structure exposed entirely, without
+        interior finishes, wherever practicable."<br /><em>Alison Smithson, 1953</em>.
+      </blockquote>
+      <p>Another good one:</p>
+      <blockquote>
+        "Brutalist architecture was Modernism's angry underside, and was
+        never, much as some would rather it were, a mere aesthetic style. It
+        was a political aesthetic, an attitude, a weapon, dedicated to the
+        precept that nothing was too good for ordinary people."<br /><em>Owen Hatherley, 2010</em>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Made with <span style="color: var(--color-accent)">♡</span> by Dominik
+      Muhs over at <a href="https://brutalist.systems/">Brutalist Systems</a>.
+    </p>
+  </footer>
+</body>
+
 </html>
