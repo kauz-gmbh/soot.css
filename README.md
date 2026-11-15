@@ -17,13 +17,3 @@ Publish
 ```sh
 npm publish --access public
 ```
-
-## Docs site
-
-The docs site is static files in `docs/`, served by Cloudflare Workers (static assets). To run it locally:
-
-```sh
-npx wrangler dev
-```
-
-Deploys run on Cloudflare Workers Builds through the Cloudflare GitHub app: every push to `main` deploys to production. No secrets are stored in this repository.
