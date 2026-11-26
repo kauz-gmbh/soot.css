@@ -1,0 +1,8 @@
+# The policy names the exact stylesheet URL and the hashes of the two inline
+# styles in index.html and 404.html. Change either in the pages and it must
+# change here too, or the browser blocks it.
+/*
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: default-src 'none'; style-src https://unpkg.com/soot.css@1.0.2/soot.min.css 'sha256-Pp3r5PjebtST9/uA1hb3ETqys4ItBADVa2O/7qX1S1Y=' 'unsafe-hashes' 'sha256-uNMMuODbm0lBex/4PxLwef6c60QIYesDI092w4bDTBg='; img-src data: https://img.shields.io https://picsum.photos https://fastly.picsum.photos; form-action 'self'; base-uri 'none'; frame-ancestors 'none'
